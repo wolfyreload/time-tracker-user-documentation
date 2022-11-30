@@ -1,0 +1,14 @@
+/*hide edit in github button large display*/
+.md-header__source {
+    display: none;
+}
+
+/*hide edit in github button small display*/
+.md-nav__source {
+    display: none;
+}
+
+/*hide edit this page button*/
+.md-content__button.md-icon {
+    display: none;
+}
