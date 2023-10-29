@@ -417,12 +417,22 @@ tool.</p>
 <li>No Activity Threshold (In Minutes) - the number of minutes before detecting
     that the computer/laptop was off</li>
 <li>Auto Start Application - Launch tool automatically when your user logs in</li>
+<li>Round Up Minutes - Add this number of minutes to to the base number of
+    minutes (default 10). This prevents 5 minute tasks from being lost</li>
+<li>Round By Minutes - Divide the rounded up minutes by this value (default 15)
+    to ensure more consisted time captured</li>
 </ul>
 <p>Remember to select the <strong>Save</strong> button for your changes to take effect.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>If you enable "Auto Start Application" but you disable the application in the Startup Apps in Windows Settings
 then Time Tracker will obey the windows settings and not start up.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The formula for Rounded time is rounded = (original_Time + round_up_minutes) / round_by_minutes * round_by_minutes.
+Be default this will make 5 minutes 15 minutes and 51 minutes will round to 1 hour. They allow for more precise
+control over time tracking and can help to ensure consistency in reported times.</p>
 </div>
 
 
